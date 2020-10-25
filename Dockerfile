@@ -22,7 +22,7 @@ RUN apk -U --no-cache add \
         php7-zip \
 	php7-mysqli \
 	php7-pdo_mysql \
-        npm
+#        npm
 
 RUN rm /www/public/index.php
 RUN mkdir /moodledata && chown php:nginx /moodledata
