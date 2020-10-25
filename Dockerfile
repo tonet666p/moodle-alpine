@@ -21,7 +21,7 @@ RUN apk -U --no-cache add \
         php7-ssh2 \
         php7-zip \
 	php7-mysqli \
-	php7-pdo_mysql \
+	php7-pdo_mysql
 #        npm
 
 RUN rm /www/public/index.php
