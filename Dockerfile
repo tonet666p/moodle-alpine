@@ -27,8 +27,8 @@ RUN apk -U --no-cache add \
 RUN rm /www/public/index.php
 RUN mkdir /moodledata && chown php:nginx /moodledata
 VOLUME /moodledata/
-RUN mkdir /www/public && chown php:nginx /www/public
-VOLUME /www/public
+#RUN mkdir /www/public && chown php:nginx /www/public
+#VOLUME /www/public
 #COPY --chown=php:nginx moodle-master /www/public/
 
 RUN find /www -type d -exec chmod -R 555 {} \; \
